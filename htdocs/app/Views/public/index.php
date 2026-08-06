@@ -29,11 +29,18 @@ require_once __DIR__ . '/../layouts/header.php';
 <div class="container py-5">
 
     <div class="row justify-content-center mb-5">
-        <div class="col-lg-8 text-center">
-            <p class="lead text-muted">
-                <?= $descripcion ?? 'Consulta los días festivos de cualquier municipio de España de forma rápida y sencilla.' ?>
-            </p>
-            <hr class="w-50 mx-auto">
+        <div class="col-12">
+            <div class="card shadow-sm border-0 rounded-4">
+                <div class="card-body p-4 p-md-5">
+                    <div class="row g-4">
+                        <div class="col-12 text-center">
+                            <p class="lead text-primary">
+                                <?= $descripcion ?? 'Consulta los días festivos de cualquier municipio de España de forma rápida y sencilla.' ?>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
