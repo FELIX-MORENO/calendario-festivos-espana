@@ -44,7 +44,7 @@ La aplicación permite:
 
 ## 📁 Estructura del Proyecto (MVC)
 
-gestionfestivos/
+calendario-festivos-espana/
 ├── app/
 │ ├── Controllers/ # Controladores (ApiController, PublicController, etc.)
 │ ├── Models/ # Modelos (FestivoModel, MunicipioModel, ApiKeyModel, etc.)
@@ -174,8 +174,8 @@ Servidor web (Apache 2.4+ con mod_rewrite).
 Instalación
 Clonar el repositorio:
 
-git clone https://github.com/tu-usuario/gestionfestivos.git
-cd gestionfestivos
+git clone https://github.com/tu-usuario/calendario-festivos-espana.git
+cd calendario-festivos-espana
 Crear la estructura de carpetas:
 
 # En Windows (Laragon)
