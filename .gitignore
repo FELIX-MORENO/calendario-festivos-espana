@@ -1,0 +1,57 @@
+# ============================================
+# ARCHIVOS DE ENTORNO (NO SUBIR A GIT)
+# ============================================
+.env
+.env.INFINITY
+.env.local.funcionando
+.env.local
+.env.production
+.env.*.local
+# ============================================
+# DEPENDENCIAS
+# ============================================
+htdocs/vendor/
+composer.phar
+composer.lock
+
+# ============================================
+# LOGS Y ARCHIVOS TEMPORALES
+# ============================================
+htdocs/logs/
+*.log
+*.tmp
+htdocs/cache/
+
+# ============================================
+# ARCHIVOS DE IDE Y SISTEMA OPERATIVO
+# ============================================
+/.vscode/
+/.idea/
+*.sublime-*
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================
+# ARCHIVOS DE BASE DE DATOS
+# ============================================
+htdocs/database/backup/
+*.sql
+*.sql.gz
+
+# ============================================
+# ARCHIVOS SUBIDOS POR EL USUARIO
+# ============================================
+htdocs/public/uploads/
+
+# ============================================
+# ARCHIVOS DE PRUEBAS
+# ============================================
+htdocs/tests/_output/
+htdocs/coverage/
+
+# ============================================
+# OTROS
+# ============================================
+*.cache
+*.lock
