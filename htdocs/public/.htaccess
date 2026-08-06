@@ -1,0 +1,62 @@
+# ============================================
+# CONFIGURACIÓN DE REWRITE PARA URLs AMIGABLES
+# ============================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Si la solicitud no es para un archivo existente
+    RewriteCond %{REQUEST_FILENAME} !-f
+    
+    # Si la solicitud no es para un directorio existente
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Redirigir todo a index.php (Front Controller)
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
+
+# ============================================
+# PREVENIR LISTADO DE DIRECTORIOS
+# ============================================
+Options -Indexes
+
+# ============================================
+# MANEJO DE ERRORES PERSONALIZADOS
+# ============================================
+ErrorDocument 404 /index.php?error=404
+ErrorDocument 403 /index.php?error=403
+ErrorDocument 500 /index.php?error=500
+
+# ============================================
+# CABECERAS DE CACHÉ PARA RECURSOS ESTÁTICOS
+# ============================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Imágenes (1 mes)
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS y JavaScript (1 semana)
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType text/javascript "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+    
+    # Fuentes (1 año)
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
+
+# ============================================
+# COMPRESIÓN GZIP
+# ============================================
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript
+    AddOutputFilterByType DEFLATE application/javascript application/json
+    AddOutputFilterByType DEFLATE font/woff font/woff2 application/font-woff2
+</IfModule>
