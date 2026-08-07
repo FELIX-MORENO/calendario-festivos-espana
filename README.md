@@ -2,8 +2,44 @@
 
 # 📅 Festivos Municipales
 
-Una aplicación web para consultar los días festivos de los municipios de España. Permite a los administradores sincronizar festivos desde una fuente oficial y ofrece una API REST para terceros.
+Una aplicación web para consultar los días festivos de los municipios de España. Permite a los administradores sincronizar festivos desde una fuente externa y ofrece una API REST para terceros.
 Puedes verla en https://diasfestivosmunicipios.free.nf/
+
+# 🛠️ Stack Tecnológico
+
+# Backend
+
+PHP 8.1.x: Lenguaje principal con tipado estricto, POO y características modernas (atributos, enumerados, match).
+
+MySQL 8.0: Base de datos relacional para el almacenamiento de los datos.
+
+PDO (PHP Data Objects): Para la conexión segura a la base de datos con sentencias preparadas, previniendo inyecciones SQL.
+
+Composer: Gestor de dependencias de PHP.
+
+vlucas/phpdotenv: Para la gestión de variables de entorno (.env).
+
+# Frontend
+
+HTML5, CSS3 y JavaScript (ES6+): Para la estructura, estilo e interactividad de la interfaz web.
+
+Bootstrap 5: Framework CSS para un diseño responsive y rápido.
+
+Axios: Cliente HTTP para realizar peticiones AJAX a la API REST desde el frontend.
+
+JSON: Formato estándar para el intercambio de datos en la API.
+
+# Servidor y Entorno
+
+La plicacion se encuentra en un servidor gratuito https://dash.infinityfree.com/
+
+# Herramientas de Desarrollo y Seguridad
+
+Git: Control de versiones.
+
+GitHub: Alojamiento del repositorio.
+
+Composer: Gestión de dependencias de PHP.
 
 ## 📋 Descripción
 
