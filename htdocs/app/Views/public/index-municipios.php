@@ -44,9 +44,11 @@ require_once __DIR__ . '/../layouts/header.php';
                             <label for="municipio" class="form-label fw-semibold">
                                 <i class="fas fa-city text-primary"></i> Municipio
                             </label>
+
                             <select id="municipio" class="form-select form-select-lg" required size="1" >
                                 <option value="">Selecciona un municipio...</option>
                             </select>
+
                             <div class="form-text" id="municipio-help">
                                 <i class="fas fa-spinner fa-spin text-muted" id="municipio-loading"></i>
                                 <span id="municipio-status">Cargando municipios...</span>

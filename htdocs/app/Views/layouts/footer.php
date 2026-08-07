@@ -13,10 +13,6 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.19.0/dist/axios.min.js"></script>
 
     <!-- ============================================ -->
-    <!-- SELECT2 (select con buscador) -->
-    <!-- ============================================ -->
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js"></script>    
-    <!-- ============================================ -->
     <!-- JAVASCRIPT PERSONALIZADO (BASE) -->
     <!-- ============================================ -->
     <script src="assets/js/app.js"></script>
