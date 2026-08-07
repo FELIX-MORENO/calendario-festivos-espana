@@ -1,3 +1,6 @@
+
+    <?php require_once('footer_html.php'); ?>
+
     <!-- ============================================ -->
     <!-- BOOTSTRAP 5 (JavaScript Bundle con Popper) -->
     <!-- ============================================ -->
