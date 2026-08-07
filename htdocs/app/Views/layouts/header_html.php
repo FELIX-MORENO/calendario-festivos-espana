@@ -4,10 +4,10 @@
     <!-- ============================================ -->
     <div class="row justify-content-center mb-3">
         <div class="col-12 text-start bg-light">
-            <div class="fw-bold text-primary mb-3" onclick="window.location.href='/'" style="cursor: pointer;" >
-                <i class="fas fa-calendar-alt text-primary"></i> <?= $titulo ?? 'Calendario de Festivos' ?>
+            <div class="fw-bold text-primary mt-2 mb-2" onclick="window.location.href='/'" style="cursor: pointer;" >
+            <img src="assets/images/ico.pie.png" alt="Logo" class="img-fluid me-2" style="height: 30px; vertical-align: middle;">
+            <?= $titulo ?? 'Calendario de Festivos' ?>
             </div>
-            <hr class="w-100 mx-auto">
         </div>
     </div>
 </div>
