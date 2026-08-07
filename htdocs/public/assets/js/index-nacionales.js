@@ -29,9 +29,7 @@
     // ============================================
     // CONFIGURACIÓN DE LA API (desde variables globales)
     // ============================================
-    
-    console.log('🔑 public.js usando API_KEY:', API_KEY);
-    console.log('🌐 public.js usando API_BASE:', API_BASE);
+
 
     // ============================================
     // ESTADO DE LA APLICACIÓN
@@ -249,8 +247,6 @@
             setTimeout(init, 500);
             return;
         }
-
-        console.log('✅ Inicializando módulo público...');
 
         // Configurar Axios globalmente (por si acaso)
         try {

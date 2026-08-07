@@ -29,9 +29,7 @@
     // ============================================
     // CONFIGURACIÓN DE LA API (desde variables globales)
     // ============================================
-    
-    console.log('🔑 public.js usando API_KEY:', API_KEY);
-    console.log('🌐 public.js usando API_BASE:', API_BASE);
+
 
     // ============================================
     // ESTADO DE LA APLICACIÓN
@@ -84,7 +82,6 @@
         try {
             // ✅ Petición a la API con API Key
             let Direccion_API=API_BASE_URL+BASE_URL+'/'+API_BASE+'/municipios';
-            console.log('La llamada a la API: '+Direccion_API);
             const response = await axios.get(Direccion_API, {
                 headers: {
                     'X-API-Key': API_KEY
@@ -195,7 +192,6 @@
         try {
             // ✅ Enviar ID encriptado tal cual (ya viene encriptado del backend)
             let Direccion_API=API_BASE_URL+BASE_URL+'/'+API_BASE+'/festivos-municipio';
-            console.log('La llamada a la API: '+Direccion_API);            
             const response = await axios.get(Direccion_API, {
                 params: {
                     municipio_id: encryptedMunicipioId,  // 🔒 ID encriptado
@@ -350,9 +346,6 @@
             setTimeout(init, 500);
             return;
         }
-
-        console.log('✅ Inicializando módulo público...');
-
         // Configurar Axios globalmente (por si acaso)
         try {
             axios.defaults.headers.common['X-API-Key'] = API_KEY;
