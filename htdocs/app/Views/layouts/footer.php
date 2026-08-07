@@ -29,11 +29,6 @@
         window.API_BASE = '<?= $_ENV['API_BASE'] ?>';
         window.BASE_URL = '<?= $_ENV['BASE_URL'] ?>';
         window.CSRF_TOKEN = '<?= $_SESSION['csrf_token'] ?? '' ?>';
-        
-        console.log('🔑 API_KEY desde servidor:', window.API_KEY);
-        console.log('🌐 API_BASE_URL:', window.API_BASE_URL);
-        console.log('🌐 API_BASE:', window.API_BASE);
-        console.log('🌐 DIRECCION API COMPLETA:', window.API_BASE_URL+'/'+window.API_BASE);
 
         // ============================================
         // 2. CONFIGURAR AXIOS
@@ -50,10 +45,6 @@
             axios.defaults.headers.common['X-API-Key'] = config.API_KEY;
             axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
             axios.defaults.headers.common['X-CSRF-TOKEN'] = config.CSRF_TOKEN;
-            
-            console.log('✅ Axios configurado:');
-            console.log('   baseURL:', axios.defaults.baseURL);
-            console.log('   API_KEY:', config.API_KEY ? '✅ Definida' : '❌ No definida');
         } else {
             console.error('❌ Axios o APP_CONFIG no está disponible');
         }

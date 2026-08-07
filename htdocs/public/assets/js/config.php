@@ -93,12 +93,3 @@ window.APP_CONFIG = {
     // ============================================
     SESSION_LIFETIME: <?= (int)$_ENV['SESSION_LIFETIME'] ?>,
 };
-
-
-console.log('✅ Configuración global cargada correctamente.');
-console.log('   API_KEY:', window.APP_CONFIG.API_KEY ? '✅ Definida' : '❌ No definida');
-console.log('   API_BASE:', window.APP_CONFIG.API_BASE || '(vacío)');
-console.log('   APP_ENV:', window.APP_CONFIG.APP_ENV);
-console.log('   BASE_URL:', window.APP_CONFIG.BASE_URL || '(vacío)');
-console.log('   ASSETS_URL:', window.APP_CONFIG.ASSETS_URL);
-console.log('✅ Configuración global cargada correctamente.');
