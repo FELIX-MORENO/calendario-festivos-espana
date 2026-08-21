@@ -51,7 +51,19 @@
             // Ajustar el tamaño del contenedor
             containerCssClass: 'form-select-lg',  // ← Clase para el contenedor
             language: 'es',
+            minimumResultsForSearch: 0,
         });
+
+        // 2. Parche para evitar el teclado en móviles y mejorar iOS
+        $('#municipio').on('select2:open', function() {
+            // Evitar que el teclado se abra automáticamente
+            $('.select2-search__field').attr('inputmode', 'none');
+
+            // Parche para iOS: forzar el foco si es necesario
+            if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent)) {
+                $('.select2-search__field').focus();
+            }
+        });        
     });
 
     // ============================================
