@@ -37,6 +37,30 @@
     <!-- ============================================ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+
+    <!-- ============================================ -->
+    <!-- JQUERY (debe cargarse ANTES que Select2) -->
+    <!-- ============================================ -->
+    <script 
+        src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+        crossorigin="anonymous">
+    </script>
+
+    <!-- ============================================ -->
+    <!-- SELECT 2                                      -->
+    <!-- ============================================ -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js">
+    </script>
+    <!-- ============================================ -->
+    <!-- SELECT2 TEMA BOOTSTRAP 5 (Estilo Bootstrap) -->
+    <!-- ============================================ -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" 
+        rel="stylesheet" 
+    />
+
     <!-- ============================================ -->
     <!-- ESTILOS PERSONALIZADOS -->
     <!-- ============================================ -->

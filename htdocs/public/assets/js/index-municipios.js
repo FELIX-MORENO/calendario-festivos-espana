@@ -38,6 +38,23 @@
     let municipiosCargados = false;
 
     // ============================================
+    // ESPERAR A QUE EL DOM ESTÉ LISTO
+    // ============================================
+    $(document).ready(function() {
+        $('#municipio').select2({
+            placeholder: 'Selecciona un municipio...',
+            allowClear: true,
+            width: '100%',
+            theme: 'bootstrap-5',  // ← Tema Bootstrap 5
+            // Ajustar el tamaño del dropdown
+            dropdownCssClass: 'form-select-lg',  // ← Clase para el dropdown
+            // Ajustar el tamaño del contenedor
+            containerCssClass: 'form-select-lg',  // ← Clase para el contenedor
+            language: 'es',
+        });
+    });
+
+    // ============================================
     // FUNCIÓN: ACTUALIZAR ESTADO (badge)
     // ============================================
     function setStatus(message, type = 'info') {
